@@ -1,11 +1,11 @@
 const { Pool, Client } = require('pg');
 
 const client = new Client({
-  user: 'fengjizhang',
-  host: 'localhost',
-  database: 'template1',
-  password: 'Popo1',
-  port: 54321,
+  user: process.env.USER,
+  host: process.env.HOST,
+  database: process.env.DATABASE,
+  password: process.env.PASS,
+  port: process.env.PORT,
 })
 
 client.connect();
@@ -39,7 +39,7 @@ client.query(
   id INTEGER NOT NULL PRIMARY KEY,
   question_id INTEGER NOT NULL,
   body VARCHAR(255) NOT NULL,
-  date_written DATE NOT NULL,
+  date_written BIGINT NOT NULL,
   answerer_name VARCHAR(50),
   answerer_email VARCHAR(50),
   reported BOOLEAN DEFAULT FALSE,
