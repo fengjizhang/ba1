@@ -1,7 +1,7 @@
 BLAZE Questions & Answers API
 ------------------------------
 to install,
-npm start
+npm install
 
 to start server,
 npm start.
