@@ -1,4 +1,4 @@
-BLAZE Questions & Answers API
+# BLAZE Questions & Answers API
 ------------------------------
 to install,
 npm install
@@ -11,7 +11,8 @@ import.ts has setup to upload data into database.
 BLAZE QA API
 This API intereacts with client side.
 
-SETUP
+# SETUP
 -------------
 1. install dependencies $ npm install
 2. Start server $npm start
+
